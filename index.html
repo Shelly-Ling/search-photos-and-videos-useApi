@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="https://kit.fontawesome.com/6e1636b755.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- 想設定滿版背景但要有0.5 透明度失敗，會連所有body東西一起半透明 -->
+  <!-- <div class="background-image-container">
+    <div class="background-image"
+      style=" background-image:url(https://pixabay.com/get/57e1d1474a5aa814f6da8c7dda793676163edbe357516c48732f7bd79549c450bb_1280.jpg);background-repeat: repeat;">
+    </div>
+  </div> -->
+
+  <!-- As a heading -->
+  <nav class="navbar navbar-light bg-light ">
+    <span class="navbar-brand mb-0 h1" id="web-name"><em>Part of word</em></span>
+  </nav>
+  <!-- Carousel  -->
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <!-- 放隨機的輪播圖 -->
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <!-- 搜尋按鈕組 -->
+  <div id="search-btns">
+    <form class="form-inline my-2 my-lg-0">
+      <input id="search-photo-input" class="form-control mr-sm-2" type="search" placeholder="ex: flower, red..."
+        aria-label="Search">
+      <button id="search-photo-btn" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search for
+        photos</button>
+    </form>
+    <form class="form-inline my-2 my-lg-0">
+      <input id="search-video-input" class="form-control mr-sm-2" type="search" placeholder="ex: ocaen, views"
+        aria-label="Search">
+      <button id="search-video-btn" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search for
+        videos</button>
+    </form>
+  </div>
+
+  <div class="regular-search-btns-container">
+    <div id="regular-photo-search-btns">
+      <div>Quick search photos:</div>
+      <div>
+        <button type="button" class="btn btn-outline-info">Cat</button>
+        <button type="button" class="btn btn-outline-info">Views</button>
+        <button type="button" class="btn btn-outline-info">Love</button>
+      </div>
+    </div>
+    <div id="regular-video-search-btns">
+      <div>Quick search videos:</div>
+      <div>
+        <button type="button" class="btn btn-outline-info">Dog</button>
+        <button type="button" class="btn btn-outline-info">Flower</button>
+        <button type="button" class="btn btn-outline-info">Ocean</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="photo-or-viedo-container">
+    <!-- 渲染資料位置 -->
+  </div>
+  <!-- 分頁器 -->
+
+  <nav aria-label="Page navigation example">
+    <ul class="pagination" id="paginator">
+
+    </ul>
+  </nav>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+  <script src="./index.js"></script>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
